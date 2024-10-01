@@ -1,96 +1,176 @@
-
 <!DOCTYPE html>
-<html lang="ru" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>design</title>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="design.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Design Project</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        .text-black {
+            color: black;
+        }
+        .section-background {
+            background-image: url('images2/1page.png');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+        .carousel img {
+            max-width: 80%;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
-<header>
-    <section id="section1">
-    <nav>
-       <ul class="header-menu">
-            <li><a href="#section1">Главная</a></li>
-            <li><a href="#section2">О Нас</a></li>
-            <li><a href="#section3">Кейсы</a></li>
-            <li><a href="#section4">Контакты</a></li>
-        </ul>
-    </nav>
-    <div class="social-media">
-        <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
-        <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Create Comfort</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#section1">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section2">О Нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section3">Кейсы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#carouselSection">Карусель</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section4">Контакты</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <h1 class="header-h1">Create</h1>
-    <h2 class="head-h2">comfort.</h2>
-    </section>
+</nav>
+
+<!-- Hero Section -->
+<header class="section-background text-light text-center d-flex align-items-center justify-content-center">
+    <div class="container">
+        <h1 class="display-3">Create</h1>
+        <h2>Comfort.</h2>
+        <div class="d-flex justify-content-center">
+            <a href="https://facebook.com" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" class="text-light"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
 </header>
 
-<main>
-    <section id="section2">
-    <div class="container">
-    <div class="content">
-<h1 class="main-h1">Мы работаем  с профессианалами своего дела!</h1>
-    <h2 class="main-h2">Наши дизайнеры обладают многолетним опытом в создании уютных,
-        <br>функциональных и красивых пространств —
-        <br>от квартир и домов до офисов и коммерческих помещений.
-        <br>Мы тщательно подбираем материалы, цвета и элементы декора,
-        <br>чтобы каждый проект стал по-настоящему уникальным.</h2>
-         <button class="btn"> <a href="#section4">
-        Связаться с нами
-         </a>
-    </button>
-    </div>
-    <img class="img1"
-            src="images2/2страница.png" alt="сбоку">
-    </div>
-    </section>
-    <footer class="fr-footer"> Temirkhanova Inkara</footer>
-    <section id="section3">
-    <div class="third-page">
-        <div class="third-text">
-        <h3>Кейсы</h3>
-        <h4> Мы тщательно изучаем ваши потребности и предпочтения,
-            чтобы создать интерьер, в котором вам будет комфортно.</h4>
+<!-- About Section -->
+<section id="section2" class="container py-5">
+    <div class="row">
+        <div class="col-lg-6">
+            <h1 class="text-light">Мы работаем с профессионалами!</h1>
+            <p class="text-light">Наши дизайнеры обладают многолетним опытом в создании уютных, функциональных и красивых пространств. Мы тщательно подбираем материалы и элементы декора, чтобы каждый проект стал по-настоящему уникальным.</p>
+            <a href="#section4" class="btn btn-primary mt-3">Связаться с нами</a>
         </div>
-
-    <div class="third-img-group">
-        <img src="images2/1in3%20(1).png">
-        <img src="images2/2в3%20(2).jpg">
-        <img src="images2/3в3%20(1).png">
-        <img src="images2/4в3%20(1).png">
-
+        <div class="col-lg-6">
+            <img src="images2/2страница.png" alt="Example image" class="img-fluid">
+        </div>
     </div>
-    </div>
-    </section>
-    <section id="section4">
-        <div class="block4">
-            <div class="form-container">
-                <h4>Запишите ваши контакты</h4>
-                <form>
-                    <label for="name">Как вас зовут?</label>
-                    <input type="text" id="name" name="name" required>
+</section>
 
-                    <label for="phone">Ваш номер телефона?</label>
-                    <input type="tel" id="phone" name="phone" required>
-
-                    <label for="description">Коротко напишите задачу</label>
-                    <input type="text" id="description" name="description" required>
-
-                    <button class="btn2" type="submit">Оставить заявку</button>
-                </form>
+<!-- Cases Section -->
+<section id="section3" class="container py-5">
+    <h3 class="text-center mb-5 text-light">Кейсы</h3>
+    <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <img src="images2/1in3%20(1).png" class="card-img-top" alt="Case 1">
+                <div class="card-body">
+                    <h5 class="card-title text-light">Кейс 1</h5>
+                    <p class="card-text text-black">Этот проект включает в себя создание уютного жилого пространства с использованием натуральных материалов и современных технологий.</p>
+                </div>
             </div>
         </div>
-    </section>
-    <footer class="second-footer">
-        Daurenova Eldana
-    </footer>
-</main>>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <img src="images2/2в3%20(2).jpg" class="card-img-top" alt="Case 2">
+                <div class="card-body">
+                    <h5 class="card-title text-light">Кейс 2</h5>
+                    <p class="card-text text-black">Мы разработали функциональный офис с акцентом на удобство и эффективность работы, используя современные и стильные решения.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <img src="images2/3в3%20(1).png" class="card-img-top" alt="Case 3">
+                <div class="card-body">
+                    <h5 class="card-title text-light">Кейс 3</h5>
+                    <p class="card-text text-black">Этот проект посвящён созданию пространства для отдыха и релаксации, где каждая деталь способствует гармонии и спокойствию.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Carousel Section -->
+<section id="carouselSection" class="container py-5">
+    <h3 class="text-center mb-5 text-light">Наши Работы</h3>
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images3/chic-mid-century-modern-luxury-aesthetics-living-room-with-gray-velvet-couch-blue-rug.jpg" class="d-block w-100" alt="Слайд 1">
+            </div>
+            <div class="carousel-item">
+                <img src="images3/modern-living-room-interior-design.jpg" class="d-block w-100" alt="Слайд 2">
+            </div>
+            <div class="carousel-item">
+                <img src="images3/view-modern-entryway-with-interior-designed-furniture.jpg" class="d-block w-100" alt="Слайд 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+        </button>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="section4" class="container py-5 bg-light">
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <h4 class="text-center mb-4">Запишите ваши контакты</h4>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Как вас зовут?</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Ваш номер телефона?</label>
+                    <input type="tel" class="form-control" id="phone" required>
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Коротко напишите задачу</label>
+                    <input type="text" class="form-control" id="description" required>
+                </div>
+                <button type="submit" class="btn btn-success">Оставить заявку</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center text-light bg-dark py-4">
+    <p>Temirkhanova Inkara | Daurenova Eldana</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
